@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Presentations</title>
+		<link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+		<script src="resources/js/jquery-2.2.0.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				var containerHeight = (window.innerHeight-91) + "px";
+				document.getElementById('content').setAttribute("style","height:"+containerHeight);
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<nav class="menuNav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Admin<a></li>
+					<li><a href="#">Dashboard</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="container">
+			<input id="tab-1" type="radio" name="tab-group" checked="checked" />
+		    <label for="tab-1">tab1</label>
+		    
+		    <input id="tab-2" type="radio" name="tab-group" />
+		    <label for="tab-2">Presentation Content</label>
+		    
+		    <input id="tab-3" type="radio" name="tab-group" />
+		    <label for="tab-3">Book Delivery Instructions</label>
+
+		    <div class="strip">
+		    </div>
+		    <!--Contenido a mostrar/ocultar-->
+		    <div id="content">
+		    	<!--Contenido de la Pestaña 1-->
+		        <div id="content-1">
+		            tab1 
+		        </div>
+		        <!--Contenido de la Pestaña 2-->
+		        <div id="content-2">
+		            Presentation Content
+		        </div>
+		        <!--Contenido de la Pestaña 3-->
+		        <div id="content-3">
+		        	Book Delivery Instructions
+		        </div>
+		    </div>
+		</div>
+
+		<footer>
+			<button class="submitBtn">Submit</button>
+		</footer>
+	</body>
+</html>
