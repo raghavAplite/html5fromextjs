@@ -115,6 +115,10 @@
 	padding: 1.5em;
 	position: absolute;
 	z-index: -100;
+    width: 100%;
+    height: 100%;
+    overflow-y: visible;
+    overflow-x: visible;
 }
 #container input#tab-1:checked ~ #content #content-1,
 #container input#tab-2:checked ~ #content #content-2,
@@ -290,4 +294,184 @@ footer
 a
 {
 	text-decoration: none;
+}
+
+.tab1-innerDiv
+{
+    padding: 0px !important;
+    margin: 2.3%;
+    width: 45% !important;
+    height: auto !important;
+    overflow: hidden !important;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: tahoma, arial, verdana, sans-serif;
+    opacity: 1 !important;
+    display: inline-block;
+    position: initial !important;
+    float: left;
+}
+
+#content input
+{
+    visibility: inherit;
+}
+
+.row
+{
+    border-spacing: 0;
+    border-collapse: separate;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: tahoma, arial, verdana, sans-serif;
+    height: auto;
+    vertical-align: middle;
+    display: block;
+    margin: 15px 0px;
+}
+
+.row span
+{
+	width: 35%;
+    display: inline-block;
+    max-width: 180px;
+}
+
+.rowInput
+{
+    width: 63%;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #B5B8C8;
+    background: #fff;
+    color: black;
+    padding: 1px 3px 2px 3px;
+    background-color: white;
+    font: normal 12px/17px tahoma, arial, verdana, sans-serif;
+    min-height: 20px;
+}
+input[type=checkbox].rowInput
+{
+	width: 13px !important;
+}
+
+fieldset
+{
+    border: 1px solid #b5b8c8;
+    padding: 0px 10px 15px 10px;
+    margin: 10px 0 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    display: block;
+    overflow: hidden;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: tahoma, arial, verdana, sans-serif;
+}
+
+legend
+{
+    font: normal 11px/14px tahoma, arial, verdana, sans-serif;
+    color: #15428B;
+    padding: 1px 0;
+    position: relative;
+}
+
+fieldset .row
+{
+    margin: 10px 0px !important;
+}
+
+.uploadButton
+{
+	min-width: 75px;
+    right: auto;
+    left: 245px;
+    top: 0px;
+    margin: 0px;
+    border-color: #d1d1d1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    padding: 2px 2px 2px 2px;
+    border-width: 1px;
+    border-style: solid;
+    background-image: none;
+    background-color: white;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(48%, #f9f9f9), color-stop(52%, #e2e2e2), color-stop(100%, #e7e7e7));
+    background-image: -webkit-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e7e7e7);
+    background-image: -moz-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e7e7e7);
+    background-image: -o-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e7e7e7);
+    background-image: -ms-linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e7e7e7);
+    background-image: linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e7e7e7);
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: top;
+    overflow: hidden;
+    font: normal 11px/16px tahoma, arial, verdana, sans-serif;
+    color: #333333;
+    max-width: 100%;
+    float: right;
+}
+
+.fileFieldSet
+{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    padding: 4px 4px 4px 4px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #dfe9f6;
+    border-color: #99bce8;
+    padding: 0px 10px 0px 10px;
+}
+
+input[type=file]
+{
+    background: transparent;
+    border: 0px;
+}
+
+.tab2-innerDiv
+{
+	padding: 0px !important;
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden !important;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: tahoma, arial, verdana, sans-serif;
+    opacity: 1 !important;
+    display: inline-block;
+    position: initial !important;
+    float: left;
+}
+.row font
+{
+    display: inline-block;
+    margin: 0px 10px 0px 5px;
+}
+.terraRow span
+{
+	float: left;
+    height: 375px;
 }
