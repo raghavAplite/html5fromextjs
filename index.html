@@ -5,210 +5,451 @@
 		<title>Presentations</title>
 		<link rel="stylesheet" type="text/css" href="resources/css/style.css" />
 		<script src="resources/js/jquery-2.2.0.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function()
-			{
-				var containerHeight = (window.innerHeight-91) + "px";
-				document.getElementById('content').setAttribute("style","height:"+containerHeight);
-			});
-		</script>
+		<script src="resources/js/general.js"></script>
 	</head>
 	<body>
 		<header>
 			<nav class="menuNav">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="#">Admin<a></li>
+					<li><a href="admin.html">Admin</a></li>
 					<li><a href="#">Dashboard</a></li>
 				</ul>
 			</nav>
 		</header>
 
-		<div id="container">
-			<input id="tab-1" type="radio" name="tab-group" checked="checked" />
-		    <label for="tab-1">tab1</label>
-		    
-		    <input id="tab-2" type="radio" name="tab-group" />
-		    <label for="tab-2">Presentation Content</label>
-		    
-		    <input id="tab-3" type="radio" name="tab-group" />
-		    <label for="tab-3">Book Delivery Instructions</label>
+		<form name="homeTabs" method="post">
+			<div id="container">
+				<input id="tab-1" type="radio" name="tab-group" checked="checked" />
+			    <label for="tab-1">tab1</label>
+			    
+			    <input id="tab-2" type="radio" name="tab-group" />
+			    <label for="tab-2">Presentation Content</label>
+			    
+			    <input id="tab-3" type="radio" name="tab-group" />
+			    <label for="tab-3">Book Delivery Instructions</label>
 
-		    <div class="strip">
-		    </div>
-		    <!--Contenido a mostrar/ocultar-->
-		    <div id="content">
-		    	<!--Contenido de la Pestaña 1-->
-		        <div id="content-1">
-		            <div class="tab1-innerDiv">
-		            	<span class="row">
-		            		<span>besser:</span>
-		            		<select class="rowInput">
-		            			<option>Option 1</option>
-		            		</select>
-		            	</span>
-		            	<span class="row">
-		            		<span>presser:</span>
-		            		<select  class="rowInput">
-		            			<option>Option 1</option>
-		            		</select>
-		            	</span>
-		            	<span class="row">
-		            		<span>contriductor:</span>
-		            		<select  class="rowInput">
-		            			<option>Option 1</option>
-		            			<option>Option 2</option>
-		            		</select>
-		            	</span>
-		            	<span class="row">
-		            		<span>shezang:</span>
-		            		<input type="checkbox" class="rowInput" />
-		            	</span>
-		            	<span class="row">
-		            		<span>Location:</span>
-		            		<select class="rowInput">
-		            			<option>Option 1</option>
-		            		</select>
-		            	</span>
-		            	<span class="row">
-		            		<span>Type:</span>
-		            		<select class="rowInput">
-		            			<option>Option 1</option>
-		            		</select>
-		            	</span>
-		            	<span class="row">
-		            		<span>Date:</span>
-		            		<input type="text" class="rowInput" />
-		            	</span>
-		            	<span class="row">
-		            		<span>bollinger:</span>
-		            		<select class="rowInput">
-		            			<option>Option 1</option>
-		            		</select>
-		            	</span>
-		            </div>
-		            <div class="tab1-innerDiv">
-		            	<fieldset>
-							<legend>soolong </legend>
-							<span class="row">
-								<span>Name:</span>
-								<input type="text"  class="rowInput" />
-							</span>
-							<span class="row">
-								<span>Desc:</span>
-								<textarea class="rowInput" style="resize: none;"></textarea>
-							</span>
-						</fieldset>
-						<fieldset>
-							<legend>show </legend>
-							<span class="row">
-								<span>das 1:</span>
+			    <div class="strip">
+			    </div>
+			    <!--Contenido a mostrar/ocultar-->
+			    <div id="content">
+			    	<!--Contenido de la Pestaña 1-->
+			        <div id="content-1">
+			            <div class="tab1-innerDiv">
+			            	<span class="row">
+			            		<span>besser:</span>
 			            		<select class="rowInput">
+			            			<option selected disabled hidden value=''></option>
 			            			<option>Option 1</option>
+			            		</select>
+			            	</span>
+			            	<span class="row">
+			            		<span>presser:</span>
+			            		<select  class="rowInput">
+			            			<option selected disabled hidden value=''></option>
+			            			<option>Option 1</option>
+			            		</select>
+			            	</span>
+			            	<span class="row">
+			            		<span>contriductor:</span>
+			            		<select  class="rowInput">
+			            			<option selected disabled hidden value=''></option>
+			            			<option>Option 1</option>
+			            			<option>Option 2</option>
+			            		</select>
+			            	</span>
+			            	<span class="row">
+			            		<span>shezang:</span>
+			            		<input type="checkbox" class="rowInput" />
+			            	</span>
+			            	<span class="row">
+			            		<span>Location:</span>
+			            		<select class="rowInput">
+			            			<option selected disabled hidden value=''></option>
+			            			<option>Option 1</option>
+			            		</select>
+			            	</span>
+			            	<span class="row">
+			            		<span>Type:</span>
+			            		<select class="rowInput">
+			            			<option selected disabled hidden value=''></option>
+			            			<option>Option 1</option>
+			            		</select>
+			            	</span>
+			            	<span class="row">
+			            		<span>Date:</span>
+			            		<input type="date" class="rowInput" />
+			            	</span>
+			            	<span class="row">
+			            		<span>bollinger:</span>
+			            		<select class="rowInput">
+			            			<option selected disabled hidden value=''></option>
+			            			<option>Option 1</option>
+			            		</select>
+			            	</span>
+			            </div>
+			            <div class="tab1-innerDiv">
+			            	<fieldset>
+								<legend>soolong </legend>
+								<span class="row">
+									<span>Name:</span>
+									<input type="text"  class="rowInput" />
+								</span>
+								<span class="row">
+									<span>Desc:</span>
+									<textarea class="rowInput" style="resize: none;"></textarea>
+								</span>
+							</fieldset>
+							<fieldset>
+								<legend>show </legend>
+								<span class="row">
+									<span>das 1:</span>
+				            		<select class="rowInput">
+				            			<option selected disabled hidden value=''></option>
+				            			<option>Option 1</option>
+				            		</select>
+								</span>
+								<span class="row">
+									<span>das 2:</span>
+				            		<select class="rowInput">
+				            			<option selected disabled hidden value=''></option>
+				            			<option>Option 1</option>
+				            		</select>
+								</span>
+								<span class="row">
+									<span>fas 3:</span>
+				            		<select class="rowInput">
+				            			<option selected disabled hidden value=''></option>
+				            			<option>Option 1</option>
+				            		</select>
+								</span>
+								<span class="row">
+									<span>fas 4:</span>
+				            		<select class="rowInput">
+				            			<option selected disabled hidden value=''></option>
+				            			<option>Option 1</option>
+				            		</select>
+								</span>
+							</fieldset>
+							<fieldset class="fileFieldSet">
+								<span class="row">
+									<span>file:</span>
+				            		<input type="file" class="rowInput" />
+								</span>
+								<span class="row">
+									<button class="uploadButton">Upload</button>
+								</span>
+							</fieldset>
+			            </div>
+			        </div>
+
+			        <div id="content-2">
+			            <div class="tab2-innerDiv">
+			            	<span class="row">
+								<span>Type:</span>
+			            		<input type="checkbox" class="rowInput" onclick="checkMe('L')" id="checkL" checked="checked" /><font>L</font>
+			            		<input type="checkbox" class="rowInput" onclick="checkMe('Custom')" id="checkCustom" /><font>Custom</font>
+			            		<input type="checkbox" class="rowInput" onclick="checkMe('XL')" id="checkXL" /><font>XL</font>
+							</span>
+							<span class="row">
+								<span>remaining:</span>
+			            		<select class="rowInput">
+			            			<option selected disabled hidden value=''></option>
+			            			<option>Account</option>
+			            			<option>Dota</option>
+			            			<option>Clemt</option>
 			            		</select>
 							</span>
 							<span class="row">
-								<span>das 2:</span>
+								<span>duo:</span>
 			            		<select class="rowInput">
+			            			<option selected disabled hidden value=''></option>
 			            			<option>Option 1</option>
+			            			<option>Option 2</option>
+			            			<option>Option 3</option>
 			            		</select>
 							</span>
-							<span class="row">
-								<span>fas 3:</span>
-			            		<select class="rowInput">
-			            			<option>Option 1</option>
-			            		</select>
-							</span>
-							<span class="row">
-								<span>fas 4:</span>
-			            		<select class="rowInput">
-			            			<option>Option 1</option>
-			            		</select>
-							</span>
-						</fieldset>
-						<fieldset class="fileFieldSet">
 							<span class="row">
 								<span>file:</span>
 			            		<input type="file" class="rowInput" />
 							</span>
-							<span class="row">
+							<span class="row" style="height: 25px;">
 								<button class="uploadButton">Upload</button>
 							</span>
-						</fieldset>
-		            </div>
-		        </div>
+							<span class="row terraRow" style="display:none;">
+								<span>Terra:</span>
+			            		<input type="checkbox" class="rowInput" /><font>Overview</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Slides</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Biolides</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Clibilities</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Cuses</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Disecery</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Enves</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Inech</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Filides</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Legliance</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Relast</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Strat</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Perfides</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Quanment</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Risight</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Ting</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>DFclosure</font>
+							</span>
+							<span class="row departmentRow" style="display:none;">
+								<span>Department:</span>
+			            		<input type="checkbox" class="rowInput" /><font>567</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>567Special</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>FixTechnology</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Secudes</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Eqnology</font>
+							</span>
+							<span class="row xlRow" style="display:none;">
+								<span>XL:</span>
+			            		<input type="checkbox" class="rowInput" /><font>Tusny</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>RAGER</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Loket</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Procket</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>FRIA</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Ages</font><br/>
+			            		<input type="checkbox" class="rowInput" /><font>Interclosures</font>
+							</span>
+							<span class="row">
+								<span>Notes:</span>
+								<textarea class="rowInput" style="resize: none;height:200px;" placeholder="EXAMPLES:
+	-tuutus
+	-tuu
+	-included
+	-IDincluded
+	-Pemm rep. tuu, etc..."></textarea>
+							</span>
+			            </div>
+			        </div>
 
-		        <div id="content-2">
-		            <div  class="tab2-innerDiv">
-		            	<span class="row">
-							<span>Type:</span>
-		            		<input type="checkbox" class="rowInput" /><font>L</font>
-		            		<input type="checkbox" class="rowInput" /><font>Custom</font>
-		            		<input type="checkbox" class="rowInput" /><font>XL</font>
-						</span>
-						<span class="row">
-							<span>remaining:</span>
-		            		<select class="rowInput">
-		            			<option>Account</option>
-		            			<option>Dota</option>
-		            			<option>Clemt</option>
-		            		</select>
-						</span>
-						<span class="row">
-							<span>duo:</span>
-		            		<select class="rowInput">
-		            			<option>Option 1</option>
-		            			<option>Option 2</option>
-		            			<option>Option 3</option>
-		            		</select>
-						</span>
-						<span class="row">
-							<span>file:</span>
-		            		<input type="file" class="rowInput" />
-						</span>
-						<span class="row">
-							<button class="uploadButton">Upload</button>
-						</span>
-						<span class="row terraRow" style="display:none;">
-							<span>Terra:</span>
-		            		<input type="checkbox" class="rowInput" /><font>Overview</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Slides</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Biolides</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Clibilities</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Cuses</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Disecery</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Enves</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Inech</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Filides</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Legliance</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Relast</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Strat</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Perfides</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Quanment</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Risight</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>Ting</font><br/>
-		            		<input type="checkbox" class="rowInput" /><font>DFclosure</font>
-						</span>
-						<span class="row">
-							<span>Notes:</span>
-							<textarea class="rowInput" style="resize: none;height:200px;" placeholder="EXAMPLES:
--tuutus
--tuu
--included
--IDincluded
--Pemm rep. tuu, etc..."></textarea>
-						</span>
-		            </div>
-		        </div>
+			        <div id="content-3">
+			        	<div class="tab3-innerDiv">
+			        		<span class="row">
+								<span>FennRequired:</span>
+			            		<select class="rowInput" onchange="changePageData(this.value)" style="height:23px;">
+			            			<option selected disabled hidden value=''></option>
+			            			<option value="Eleonly (PDF)">Eleonly (PDF)</option>
+			            			<option value="Pard Copy">Pard Copy</option>
+			            		</select>
+							</span>
+							<div class="divEleonly" style="display:none;">
+								<span>ReqDate:</span>
+								<input type="date" class="tab3Inputs" />
+								<span>ReqTime:</span>
+								<select  class="tab3Inputs">
+									<option selected disabled hidden value=''></option>
+			            			<option value="12:00 AM">12:00 AM</option>
+			            			<option value="1:00 AM">1:00 AM</option>
+			            			<option value="2:00 AM">2:00 AM</option>
+			            			<option value="3:00 AM">3:00 AM</option>
+			            			<option value="4:00 AM">4:00 AM</option>
+			            			<option value="5:00 AM">5:00 AM</option>
+			            			<option value="6:00 AM">6:00 AM</option>
+			            			<option value="7:00 AM">7:00 AM</option>
+			            			<option value="8:00 AM">8:00 AM</option>
+			            			<option value="9:00 AM">9:00 AM</option>
+			            			<option value="10:00 AM">10:00 AM</option>
+			            			<option value="11:00 AM">11:00 AM</option>
+			            			<option value="12:00 PM">12:00 PM</option>
+			            			<option value="1:00 PM">1:00 PM</option>
+			            			<option value="2:00 PM">2:00 PM</option>
+			            			<option value="3:00 PM">3:00 PM</option>
+			            			<option value="4:00 PM">4:00 PM</option>
+			            			<option value="5:00 PM">5:00 PM</option>
+			            			<option value="6:00 PM">6:00 PM</option>
+			            			<option value="7:00 PM">7:00 PM</option>
+			            			<option value="8:00 PM">8:00 PM</option>
+			            			<option value="9:00 PM">9:00 PM</option>
+			            			<option value="10:00 PM">10:00 PM</option>
+			            			<option value="11:00 PM">11:00 PM</option>
+								</select>
+								<span>EmailTo:</span>
+								<select  class="tab3Inputs">
+									<option selected disabled hidden value=''></option>
+			            			<option value="Option 1">Option 1</option>
+			            			<option value="Option 2">Option 2</option>
+			            			<option value="Option 3">Option 3</option>
+								</select>
+							</div>
+							<div class="divPardCopy" style="display:none;">
+								<div class="tab3-innerInnerDiv" style="margin: 0px;">
+									<span>ReqDate:</span>
+									<input type="date" class="tab3Inputs" />
+									<span>ReqTime:</span>
+									<select  class="tab3Inputs">
+										<option selected disabled hidden value=''></option>
+				            			<option value="12:00 AM">12:00 AM</option>
+				            			<option value="1:00 AM">1:00 AM</option>
+				            			<option value="2:00 AM">2:00 AM</option>
+				            			<option value="3:00 AM">3:00 AM</option>
+				            			<option value="4:00 AM">4:00 AM</option>
+				            			<option value="5:00 AM">5:00 AM</option>
+				            			<option value="6:00 AM">6:00 AM</option>
+				            			<option value="7:00 AM">7:00 AM</option>
+				            			<option value="8:00 AM">8:00 AM</option>
+				            			<option value="9:00 AM">9:00 AM</option>
+				            			<option value="10:00 AM">10:00 AM</option>
+				            			<option value="11:00 AM">11:00 AM</option>
+				            			<option value="12:00 PM">12:00 PM</option>
+				            			<option value="1:00 PM">1:00 PM</option>
+				            			<option value="2:00 PM">2:00 PM</option>
+				            			<option value="3:00 PM">3:00 PM</option>
+				            			<option value="4:00 PM">4:00 PM</option>
+				            			<option value="5:00 PM">5:00 PM</option>
+				            			<option value="6:00 PM">6:00 PM</option>
+				            			<option value="7:00 PM">7:00 PM</option>
+				            			<option value="8:00 PM">8:00 PM</option>
+				            			<option value="9:00 PM">9:00 PM</option>
+				            			<option value="10:00 PM">10:00 PM</option>
+				            			<option value="11:00 PM">11:00 PM</option>
+									</select>
+									<span>EmailTo:</span>
+									<select  class="tab3Inputs">
+										<option selected disabled hidden value=''></option>
+				            			<option value="Option 1">Option 1</option>
+				            			<option value="Option 2">Option 2</option>
+				            			<option value="Option 3">Option 3</option>
+									</select>
+									<span>CopiesTR:</span>
+									<input type="text" class="tab3Inputs" />
+									<span>Paper Type:</span>
+									<select  class="tab3Inputs">
+										<option selected disabled hidden value=''></option>
+				            			<option value="Union">Union</option>
+				            			<option value="Plain (Non-Union)">Plain (Non-Union)</option>
+									</select>
+									<span>Print Type:</span>
+									<select  class="tab3Inputs">
+										<option selected disabled hidden value=''></option>
+				            			<option value="sided (bae tabs)">sided (bae tabs)</option>
+				            			<option value="sides (bua tabs)">sides (bua tabs)</option>
+									</select>
+									<span>FnType:</span>
+									<select  class="tab3Inputs">
+										<option selected disabled hidden value=''></option>
+				            			<option value="Wirnd">Wirnd</option>
+				            			<option value="Stafed">Stafed</option>
+				            			<option value="Unfind">Unfind</option>
+									</select>
+									<span># of Books:</span>
+									<select  class="tab3Inputs">
+										<option selected disabled hidden value=''></option>
+				            			<option value="1">1</option>
+				            			<option value="2">2</option>
+				            			<option value="3">3</option>
+									</select>
+									<span>Delivery Date:</span>
+									<input type="date" class="tab3Inputs" />
+									<span>Time Required:</span>
+									<select  class="tab3Inputs">
+										<option selected disabled hidden value=''></option>
+				            			<option value="12:00 AM">12:00 AM</option>
+				            			<option value="1:00 AM">1:00 AM</option>
+				            			<option value="2:00 AM">2:00 AM</option>
+				            			<option value="3:00 AM">3:00 AM</option>
+				            			<option value="4:00 AM">4:00 AM</option>
+				            			<option value="5:00 AM">5:00 AM</option>
+				            			<option value="6:00 AM">6:00 AM</option>
+				            			<option value="7:00 AM">7:00 AM</option>
+				            			<option value="8:00 AM">8:00 AM</option>
+				            			<option value="9:00 AM">9:00 AM</option>
+				            			<option value="10:00 AM">10:00 AM</option>
+				            			<option value="11:00 AM">11:00 AM</option>
+				            			<option value="12:00 PM">12:00 PM</option>
+				            			<option value="1:00 PM">1:00 PM</option>
+				            			<option value="2:00 PM">2:00 PM</option>
+				            			<option value="3:00 PM">3:00 PM</option>
+				            			<option value="4:00 PM">4:00 PM</option>
+				            			<option value="5:00 PM">5:00 PM</option>
+				            			<option value="6:00 PM">6:00 PM</option>
+				            			<option value="7:00 PM">7:00 PM</option>
+				            			<option value="8:00 PM">8:00 PM</option>
+				            			<option value="9:00 PM">9:00 PM</option>
+				            			<option value="10:00 PM">10:00 PM</option>
+				            			<option value="11:00 PM">11:00 PM</option>
+									</select>
+									<span>Contact Person:</span>
+									<select  class="tab3Inputs">
+										<option selected disabled hidden value=''></option>
+				            			<option value="Option 1">Option 1</option>
+									</select>
+								</div>
+								<div class="tab3-innerInnerDiv" style="margin: 0px 3%;">
+									<span>Type:</span>
+									<select  class="tab3Inputs">
+										<option selected disabled hidden value=''></option>
+				            			<option value="Overnight">Overnight</option>
+				            			<option value="Morning">Morning</option>
+									</select>
+									<span>terrw :</span>
+									<select  class="tab3Inputs">
+										<option selected disabled hidden value=''></option>
+				            			<option value="Yes">Yes</option>
+				            			<option value="No">No</option>
+									</select>
+									<span># of yupp:</span>
+									<select  class="tab3Inputs">
+										<option selected disabled hidden value=''></option>
+				            			<option value="1">1</option>
+				            			<option value="2">2</option>
+				            			<option value="3">3</option>
+									</select>
+									<span>Arrive By Date:</span>
+									<input type="date" class="tab3Inputs" />
+									<span>Arrive By Time:</span>
+									<select  class="tab3Inputs">
+										<option selected disabled hidden value=''></option>
+				            			<option value="12:00 AM">12:00 AM</option>
+				            			<option value="1:00 AM">1:00 AM</option>
+				            			<option value="2:00 AM">2:00 AM</option>
+				            			<option value="3:00 AM">3:00 AM</option>
+				            			<option value="4:00 AM">4:00 AM</option>
+				            			<option value="5:00 AM">5:00 AM</option>
+				            			<option value="6:00 AM">6:00 AM</option>
+				            			<option value="7:00 AM">7:00 AM</option>
+				            			<option value="8:00 AM">8:00 AM</option>
+				            			<option value="9:00 AM">9:00 AM</option>
+				            			<option value="10:00 AM">10:00 AM</option>
+				            			<option value="11:00 AM">11:00 AM</option>
+				            			<option value="12:00 PM">12:00 PM</option>
+				            			<option value="1:00 PM">1:00 PM</option>
+				            			<option value="2:00 PM">2:00 PM</option>
+				            			<option value="3:00 PM">3:00 PM</option>
+				            			<option value="4:00 PM">4:00 PM</option>
+				            			<option value="5:00 PM">5:00 PM</option>
+				            			<option value="6:00 PM">6:00 PM</option>
+				            			<option value="7:00 PM">7:00 PM</option>
+				            			<option value="8:00 PM">8:00 PM</option>
+				            			<option value="9:00 PM">9:00 PM</option>
+				            			<option value="10:00 PM">10:00 PM</option>
+				            			<option value="11:00 PM">11:00 PM</option>
+									</select>
+									<span>qq Name:</span>
+									<input type="text" class="tab3Inputs" />
+									<span>Contact  Number:</span>
+									<input type="text" class="tab3Inputs" />
+									<span>Company Name:</span>
+									<input type="text" class="tab3Inputs" />
+									<span>Company Address:</span>
+									<input type="text" class="tab3Inputs" />
+									<span>Suite/Floor:</span>
+									<input type="text" class="tab3Inputs" />
+									<span>City/State/Zip:</span>
+									<input type="text" class="tab3Inputs" />								
+								</div>
+							</div>
+			        	</div>
+			        </div>
+			    </div>
+			</div>
 
-		        <div id="content-3">
-		        	Book Delivery Instructions
-		        </div>
-		    </div>
-		</div>
-
-		<footer>
-			<button class="submitBtn">Submit</button>
-		</footer>
+			<footer>
+				<button type="submit" class="submitBtn">Submit</button>
+			</footer>
+		</form>
 	</body>
 </html>
