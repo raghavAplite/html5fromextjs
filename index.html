@@ -1,453 +1,640 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<title>Presentations</title>
-		<link rel="stylesheet" type="text/css" href="resources/css/style.css" />
-		<script src="resources/js/jquery-2.2.0.min.js"></script>
-		<script src="resources/js/general.js"></script>
-
-	</head>
-	<body>
-		<header>
-			<nav class="menuNav">
-				<ul nav nav-pills>
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="admin.html">Admin</a></li>
-					<li><a href="#">Dashboard</a></li>
-				</ul>
-			</nav>
-		</header>
-		<div id="container">
-			<input id="tab-1" type="radio" name="tab-group" checked="checked" />
-		    <label for="tab-1">tab1</label>
-		    
-		    <input id="tab-2" type="radio" name="tab-group" />
-		    <label for="tab-2">Presentation Content</label>
-		    
-		    <input id="tab-3" type="radio" name="tab-group" />
-		    <label for="tab-3">Book Delivery Instructions</label>
-
-		    <div class="strip">
-		    </div>
-		    <!--Contenido a mostrar/ocultar-->
-		    <div id="content">
-		    	<!--Contenido de la Pestaña 1-->
-		        <div id="content-1">
-		            <div class="tab1-innerDiv">
-		            	<span class="row">
-		            		<span>besser:</span>
-		            		<select class="rowInput" id="tab1_besser">
-		            			<option selected disabled hidden value=''></option>
-		            			<option>Option 1</option>
-		            		</select>
-		            	</span>
-		            	<span class="row">
-		            		<span>presser:</span>
-		            		<select  class="rowInput" id="tab1_presser">
-		            			<option selected disabled hidden value=''></option>
-		            			<option>Option 1</option>
-		            		</select>
-		            	</span>
-		            	<span class="row">
-		            		<span>contriductor:</span>
-		            		<select  class="rowInput" id="tab1_contriductor">
-		            			<option selected disabled hidden value=''></option>
-		            			<option>Option 1</option>
-		            			<option>Option 2</option>
-		            		</select>
-		            	</span>
-		            	<span class="row">
-		            		<span>shezang:</span>
-		            		<input type="checkbox" class="rowInput" id="tab1_shezang"/>
-		            	</span>
-		            	<span class="row">
-		            		<span>Location:</span>
-		            		<select class="rowInput" id="tab1_Location">
-		            			<option selected disabled hidden value=''></option>
-		            			<option>Option 1</option>
-		            		</select>
-		            	</span>
-		            	<span class="row">
-		            		<span>Type:</span>
-		            		<select class="rowInput"  id="tab1_Type">
-		            			<option selected disabled hidden value=''></option>
-		            			<option>Option 1</option>
-		            		</select>
-		            	</span>
-		            	<span class="row">
-		            		<span>Date:</span>
-		            		<input type="date" class="rowInput" id="tab1_Date"/>
-		            	</span>
-		            	<span class="row">
-		            		<span>bollinger:</span>
-		            		<select class="rowInput"  id="tab1_bollinger">
-		            			<option selected disabled hidden value=''></option>
-		            			<option>Option 1</option>
-		            		</select>
-		            	</span>
-		            </div>
-		            <div class="tab1-innerDiv">
-		            	<fieldset>
-							<legend>soolong </legend>
-							<span class="row">
-								<span>Name:</span>
-								<input type="text"  class="rowInput" id="tab1_Name"/>
-							</span>
-							<span class="row">
-								<span>Desc:</span>
-								<textarea class="rowInput" style="resize: none;" id="tab1_Desc"></textarea>
-							</span>
-						</fieldset>
-						<fieldset>
-							<legend>show </legend>
-							<span class="row">
-								<span>das 1:</span>
-			            		<select class="rowInput" id="tab1_das1">
-			            			<option selected disabled hidden value=''></option>
-			            			<option>Option 1</option>
-			            		</select>
-							</span>
-							<span class="row">
-								<span>das 2:</span>
-			            		<select class="rowInput" id="tab1_das2">
-			            			<option selected disabled hidden value=''></option>
-			            			<option>Option 1</option>
-			            		</select>
-							</span>
-							<span class="row">
-								<span>fas 3:</span>
-			            		<select class="rowInput" id="tab1_das3">
-			            			<option selected disabled hidden value=''></option>
-			            			<option>Option 1</option>
-			            		</select>
-							</span>
-							<span class="row">
-								<span>fas 4:</span>
-			            		<select class="rowInput" id="tab1_das4">
-			            			<option selected disabled hidden value=''></option>
-			            			<option>Option 1</option>
-			            		</select>
-							</span>
-						</fieldset>
-						<fieldset class="fileFieldSet">
-							<span class="row">
-								<span>file:</span>
-			            		<input type="file" class="rowInput" id="tab1_file"/>
-							</span>
-							<span class="row">
-								<button class="uploadButton">Upload</button>
-							</span>
-						</fieldset>
-		            </div>
-		        </div>
-
-		        <div id="content-2">
-		            <div class="tab2-innerDiv">
-		            	<span class="row">
-							<span>Type:</span>
-		            		<input type="checkbox" class="rowInput" nclick="checkMe('L')" id="checkL" checked="checked" /><font>L</font>
-		            		<input type="checkbox" class="rowInput" onclick="checkMe('Custom')" id="checkCustom" /><font>Custom</font>
-		            		<input type="checkbox" class="rowInput" onclick="checkMe('XL')" id="checkXL" /><font>XL</font>
-						</span>
-						<span class="row">
-							<span>remaining:</span>
-		            		<select class="rowInput" id="tab2_remaining">
-		            			<option selected disabled hidden value=''></option>
-		            			<option>Account</option>
-		            			<option>Dota</option>
-		            			<option>Clemt</option>
-		            		</select>
-						</span>
-						<span class="row">
-							<span>duo:</span>
-		            		<select class="rowInput" id="tab2_duo">
-		            			<option selected disabled hidden value=''></option>
-		            			<option>Option 1</option>
-		            			<option>Option 2</option>
-		            			<option>Option 3</option>
-		            		</select>
-						</span>
-						<span class="row">
-							<span>file:</span>
-		            		<input type="file" class="rowInput" id="tab2_file"/>
-						</span>
-						<span class="row" style="height: 25px;">
-							<button class="uploadButton">Upload</button>
-						</span>
-						<span class="row terraRow" style="display:none;">
-							<span>Terra:</span>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraOverview"/><font>Overview</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraSlides"/><font>Slides</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraBiolides"/><font>Biolides</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraClibilities"/><font>Clibilities</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraCuses"/><font>Cuses</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraDisecery"/><font>Disecery</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraEnves"/><font>Enves</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraInech"/><font>Inech</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraFilides"/><font>Filides</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraLegliance"/><font>Legliance</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraRelast"/><font>Relast</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraStrat"/><font>Strat</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraPerfides"/><font>Perfides</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraQuanment"/><font>Quanment</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraRisight"/><font>Risight</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraTing"/><font>Ting</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraDFclosure"/><font>DFclosure</font>
-						</span>
-						<span class="row departmentRow" style="display:none;">
-							<span>Department:</span>
-		            		<input type="checkbox" class="rowInput" id="tab2_terra567"/><font>567</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terra567Special"/><font>567Special</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraFixTechnology"/><font>FixTechnology</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraSecudes"/><font>Secudes</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraEqnology"/><font>Eqnology</font>
-						</span>
-						<span class="row xlRow" style="display:none;">
-							<span>XL:</span>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraTusny"/><font>Tusny</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraRAGER"/><font>RAGER</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraLoket"/><font>Loket</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraProcket"/><font>Procket</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraFRIA"/><font>FRIA</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraAges"/><font>Ages</font><br/>
-		            		<input type="checkbox" class="rowInput" id="tab2_terraInterclosures"/><font>Interclosures</font>
-						</span>
-						<span class="row">
-							<span>Notes:</span>
-							<textarea class="rowInput" style="resize: none;height:200px;" placeholder="EXAMPLES:
--tuutus
--tuu
--included
--IDincluded
--Pemm rep. tuu, etc..."id="tab2_Notes"></textarea>
-						</span>
-		            </div>
-		        </div>
-
-		        <div id="content-3">
-		        	<div class="tab3-innerDiv">
-		        		<span class="row">
-							<span>FennRequired:</span>
-		            		<select class="rowInput" onchange="changePageData(this.value)" style="height:23px;" id="tab3_FennRequired">
-		            			<option selected disabled hidden value=''></option>
-		            			<option value="Eleonly (PDF)">Eleonly (PDF)</option>
-		            			<option value="Pard Copy">Pard Copy</option>
-		            		</select>
-						</span>
-						<div class="divEleonly" style="display:none;">
-							<span>ReqDate:</span>
-							<input type="date" class="tab3Inputs" id="tab3_ReqDate"/>
-							<span>ReqTime:</span>
-							<select  class="tab3Inputs" id="tab3_ReqTime">
-								<option selected disabled hidden value=''></option>
-		            			<option value="12:00 AM">12:00 AM</option>
-		            			<option value="1:00 AM">1:00 AM</option>
-		            			<option value="2:00 AM">2:00 AM</option>
-		            			<option value="3:00 AM">3:00 AM</option>
-		            			<option value="4:00 AM">4:00 AM</option>
-		            			<option value="5:00 AM">5:00 AM</option>
-		            			<option value="6:00 AM">6:00 AM</option>
-		            			<option value="7:00 AM">7:00 AM</option>
-		            			<option value="8:00 AM">8:00 AM</option>
-		            			<option value="9:00 AM">9:00 AM</option>
-		            			<option value="10:00 AM">10:00 AM</option>
-		            			<option value="11:00 AM">11:00 AM</option>
-		            			<option value="12:00 PM">12:00 PM</option>
-		            			<option value="1:00 PM">1:00 PM</option>
-		            			<option value="2:00 PM">2:00 PM</option>
-		            			<option value="3:00 PM">3:00 PM</option>
-		            			<option value="4:00 PM">4:00 PM</option>
-		            			<option value="5:00 PM">5:00 PM</option>
-		            			<option value="6:00 PM">6:00 PM</option>
-		            			<option value="7:00 PM">7:00 PM</option>
-		            			<option value="8:00 PM">8:00 PM</option>
-		            			<option value="9:00 PM">9:00 PM</option>
-		            			<option value="10:00 PM">10:00 PM</option>
-		            			<option value="11:00 PM">11:00 PM</option>
-							</select>
-							<span>EmailTo:</span>
-							<select  class="tab3Inputs" id="tab3_EmailTo">
-								<option selected disabled hidden value=''></option>
-		            			<option value="Option 1">Option 1</option>
-		            			<option value="Option 2">Option 2</option>
-		            			<option value="Option 3">Option 3</option>
-							</select>
-						</div>
-						<div class="divPardCopy" style="display:none;">
-							<div class="tab3-innerInnerDiv" style="margin: 0px;">
-								<span>ReqDate:</span>
-								<input type="date" class="tab3Inputs" id="tab3divPardCopy_ReqDate"/>
-								<span>ReqTime:</span>
-								<select  class="tab3Inputs" id="tab3divPardCopy_ReqTime">
-									<option selected disabled hidden value=''></option>
-			            			<option value="12:00 AM">12:00 AM</option>
-			            			<option value="1:00 AM">1:00 AM</option>
-			            			<option value="2:00 AM">2:00 AM</option>
-			            			<option value="3:00 AM">3:00 AM</option>
-			            			<option value="4:00 AM">4:00 AM</option>
-			            			<option value="5:00 AM">5:00 AM</option>
-			            			<option value="6:00 AM">6:00 AM</option>
-			            			<option value="7:00 AM">7:00 AM</option>
-			            			<option value="8:00 AM">8:00 AM</option>
-			            			<option value="9:00 AM">9:00 AM</option>
-			            			<option value="10:00 AM">10:00 AM</option>
-			            			<option value="11:00 AM">11:00 AM</option>
-			            			<option value="12:00 PM">12:00 PM</option>
-			            			<option value="1:00 PM">1:00 PM</option>
-			            			<option value="2:00 PM">2:00 PM</option>
-			            			<option value="3:00 PM">3:00 PM</option>
-			            			<option value="4:00 PM">4:00 PM</option>
-			            			<option value="5:00 PM">5:00 PM</option>
-			            			<option value="6:00 PM">6:00 PM</option>
-			            			<option value="7:00 PM">7:00 PM</option>
-			            			<option value="8:00 PM">8:00 PM</option>
-			            			<option value="9:00 PM">9:00 PM</option>
-			            			<option value="10:00 PM">10:00 PM</option>
-			            			<option value="11:00 PM">11:00 PM</option>
-								</select>
-								<span>EmailTo:</span>
-								<select  class="tab3Inputs" id="tab3divPardCopy_EmailTo">
-									<option selected disabled hidden value=''></option>
-			            			<option value="Option 1">Option 1</option>
-			            			<option value="Option 2">Option 2</option>
-			            			<option value="Option 3">Option 3</option>
-								</select>
-								<span>CopiesTR:</span>
-								<input type="text" class="tab3Inputs" id="tab3divPardCopy_CopiesTR"/>
-								<span>Paper Type:</span>
-								<select  class="tab3Inputs" id="tab3divPardCopy_Paper">
-									<option selected disabled hidden value=''></option>
-			            			<option value="Union">Union</option>
-			            			<option value="Plain (Non-Union)">Plain (Non-Union)</option>
-								</select>
-								<span>Print Type:</span>
-								<select  class="tab3Inputs" id="tab3divPardCopy_Print">
-									<option selected disabled hidden value=''></option>
-			            			<option value="sided (bae tabs)">sided (bae tabs)</option>
-			            			<option value="sides (bua tabs)">sides (bua tabs)</option>
-								</select>
-								<span>FnType:</span>
-								<select  class="tab3Inputs" id="tab3divPardCopy_FnType">
-									<option selected disabled hidden value=''></option>
-			            			<option value="Wirnd">Wirnd</option>
-			            			<option value="Stafed">Stafed</option>
-			            			<option value="Unfind">Unfind</option>
-								</select>
-								<span># of Books:</span>
-								<select  class="tab3Inputs" id="tab3divPardCopyBooks">
-									<option selected disabled hidden value=''></option>
-			            			<option value="1">1</option>
-			            			<option value="2">2</option>
-			            			<option value="3">3</option>
-								</select>
-								<span>Delivery Date:</span>
-								<input type="date" class="tab3Inputs" id="tab3divPardCopy_Deliverydate"/>
-								<span>Time Required:</span>
-								<select  class="tab3Inputs" id="tab3divPardCopy_Timerequried">
-									<option selected disabled hidden value=''></option>
-			            			<option value="12:00 AM">12:00 AM</option>
-			            			<option value="1:00 AM">1:00 AM</option>
-			            			<option value="2:00 AM">2:00 AM</option>
-			            			<option value="3:00 AM">3:00 AM</option>
-			            			<option value="4:00 AM">4:00 AM</option>
-			            			<option value="5:00 AM">5:00 AM</option>
-			            			<option value="6:00 AM">6:00 AM</option>
-			            			<option value="7:00 AM">7:00 AM</option>
-			            			<option value="8:00 AM">8:00 AM</option>
-			            			<option value="9:00 AM">9:00 AM</option>
-			            			<option value="10:00 AM">10:00 AM</option>
-			            			<option value="11:00 AM">11:00 AM</option>
-			            			<option value="12:00 PM">12:00 PM</option>
-			            			<option value="1:00 PM">1:00 PM</option>
-			            			<option value="2:00 PM">2:00 PM</option>
-			            			<option value="3:00 PM">3:00 PM</option>
-			            			<option value="4:00 PM">4:00 PM</option>
-			            			<option value="5:00 PM">5:00 PM</option>
-			            			<option value="6:00 PM">6:00 PM</option>
-			            			<option value="7:00 PM">7:00 PM</option>
-			            			<option value="8:00 PM">8:00 PM</option>
-			            			<option value="9:00 PM">9:00 PM</option>
-			            			<option value="10:00 PM">10:00 PM</option>
-			            			<option value="11:00 PM">11:00 PM</option>
-								</select>
-								<span>Contact Person:</span>
-								<select  class="tab3Inputs" id="tab3divPardCopy_Contactperson">
-									<option selected disabled hidden value=''></option>
-			            			<option value="Option 1">Option 1</option>
-								</select>
-							</div>
-							<div class="tab3-innerInnerDiv" style="margin: 0px 3%;">
-								<span>Type:</span>
-								<select  class="tab3Inputs" id="tab3divPardCopy_Type">
-									<option selected disabled hidden value=''></option>
-			            			<option value="Overnight">Overnight</option>
-			            			<option value="Morning">Morning</option>
-								</select>
-								<span>terrw :</span>
-								<select  class="tab3Inputs" id="tab3divPardCopy_terrwe">
-									<option selected disabled hidden value=''></option>
-			            			<option value="Yes">Yes</option>
-			            			<option value="No">No</option>
-								</select>
-								<span># of yupp:</span>
-								<select  class="tab3Inputs" id="tab3divPardCopyoftupp">
-									<option selected disabled hidden value=''></option>
-			            			<option value="1">1</option>
-			            			<option value="2">2</option>
-			            			<option value="3">3</option>
-								</select>
-								<span>Arrive By Date:</span>
-								<input type="date" class="tab3Inputs" id="tab3divPardCopy_Arrivebydate"/>
-								<span>Arrive By Time:</span>
-								<select  class="tab3Inputs" id="tab3divPardCopy_Arrivebytime">
-									<option selected disabled hidden value=''></option>
-			            			<option value="12:00 AM">12:00 AM</option>
-			            			<option value="1:00 AM">1:00 AM</option>
-			            			<option value="2:00 AM">2:00 AM</option>
-			            			<option value="3:00 AM">3:00 AM</option>
-			            			<option value="4:00 AM">4:00 AM</option>
-			            			<option value="5:00 AM">5:00 AM</option>
-			            			<option value="6:00 AM">6:00 AM</option>
-			            			<option value="7:00 AM">7:00 AM</option>
-			            			<option value="8:00 AM">8:00 AM</option>
-			            			<option value="9:00 AM">9:00 AM</option>
-			            			<option value="10:00 AM">10:00 AM</option>
-			            			<option value="11:00 AM">11:00 AM</option>
-			            			<option value="12:00 PM">12:00 PM</option>
-			            			<option value="1:00 PM">1:00 PM</option>
-			            			<option value="2:00 PM">2:00 PM</option>
-			            			<option value="3:00 PM">3:00 PM</option>
-			            			<option value="4:00 PM">4:00 PM</option>
-			            			<option value="5:00 PM">5:00 PM</option>
-			            			<option value="6:00 PM">6:00 PM</option>
-			            			<option value="7:00 PM">7:00 PM</option>
-			            			<option value="8:00 PM">8:00 PM</option>
-			            			<option value="9:00 PM">9:00 PM</option>
-			            			<option value="10:00 PM">10:00 PM</option>
-			            			<option value="11:00 PM">11:00 PM</option>
-								</select>
-								<span>qq Name:</span>
-								<input type="text" class="tab3Inputs" id="tab3divPardCopy_qqname"/>
-								<span>Contact  Number:</span>
-								<input type="text" class="tab3Inputs" id="tab3divPardCopy_Contactnumber"/>
-								<span>Company Name:</span>
-								<input type="text" class="tab3Inputs" id="tab3divPardCopy_Contactname"/>
-								<span>Company Address:</span>
-								<input type="text" class="tab3Inputs" id="tab3divPardCopy_Contactaddress"/>
-								<span>Suite/Floor:</span>
-								<input type="text" class="tab3Inputs" id="tab3divPardCopy_SuiteFloor"/>
-								<span>City/State/Zip:</span>
-								<input type="text" class="tab3Inputs" id="tab3divPardCopy_CitystateZip"/>						
-							</div>
-						</div>
-		        	</div>
-		        </div>
-		    </div>
-		</div>
-		<div id="showdata"></div>
-		<footer>
-			<button class="submitBtn" id="submitMe">Submit</button>
-		</footer>
-	</body>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Presentations</title>
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+        <script src="resources/js/jquery-2.2.0.min.js"></script>
+        <script src="resources/js/general.js"></script>
+        <link href="resources/css/jquery.multiselect.css" rel="stylesheet" type="text/css">
+        <style>
+            body {
+            font-family: 'Open Sans' Arial, Helvetica, sans-serif
+            }
+            ul,
+            li {
+            margin: 0;
+            padding: 0;
+            list-style: nont;
+            }
+            .label {
+            color: #000;
+            font-size: 16px;
+            }
+            .container {
+            max-width: 728px;
+            margin-top: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="menuNav">
+                <ul>
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="admin.html">Admin</a>
+                    </li>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="container">
+            <input id="tab-1" type="radio" name="tab-group" checked="checked" />
+            <label for="tab-1">tab1</label>
+            <input id="tab-2" type="radio" name="tab-group" />
+            <label for="tab-2">Presentation Content</label>
+            <input id="tab-3" type="radio" name="tab-group" />
+            <label for="tab-3">Book Delivery Instructions</label>
+            <div class="strip"></div>
+            <!--Contenido a mostrar/ocultar-->
+            <div id="content">
+                <!--Contenido de la Pestaña 1-->
+                <div id="content-1" class="contentDiv">
+                    <div class="tab1-innerDiv contentDiv">
+                        <span class="row">
+                            <span>besser:</span>
+                            <select class="rowInput" id="tab1_besser">
+                                <option selected disabled hidden value=''></option>
+                                <option>Option 1</option>
+                            </select>
+                        </span>
+                        <span class="row">
+                            <span>presser:</span>
+                            <select class="rowInput" id="tab1_presser">
+                                <option selected disabled hidden value=''></option>
+                                <option>Option 1</option>
+                            </select>
+                        </span>
+                        <span class="row">
+                            <span>contriductor:</span>
+                            <select multiple>
+                                <option value="Option 1">Option 1</option>
+                                <option value="Option 2">Option 2</option>
+                            </select>
+                        </span>
+                        <span class="row">
+                        <span>shezang:</span>
+                        <input type="checkbox" class="css-checkbox" id="tab1_shezang" name="tab1_shezang" />
+                        <span for="checkboxG4" class="css-label radGroup1"></span>
+                        </span>
+                        <span class="row">
+                            <span>Location:</span>
+                            <select class="rowInput" id="tab1_Location">
+                                <option selected disabled hidden value=''></option>
+                                <option>Option 1</option>
+                            </select>
+                        </span>
+                        <span class="row">
+                            <span>Type:</span>
+                            <select class="rowInput" id="tab1_Type">
+                                <option selected disabled hidden value=''></option>
+                                <option>Option 1</option>
+                            </select>
+                        </span>
+                        <span class="row">
+                        <span>Date:</span>
+                        <input type="date" class="rowInput" id="tab1_Date" />
+                        </span>
+                        <span class="row">
+                            <span>bollinger:</span>
+                            <select class="rowInput" id="tab1_bollinger">
+                                <option selected disabled hidden value=''></option>
+                                <option>Option 1</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="tab1-innerDiv contentDiv" style="margin-left: 15px;">
+                        <fieldset>
+                            <legend>soolong </legend>
+                            <span class="row">
+                            <span>Name:</span>
+                            <input type="text" class="rowInput" id="tab1_Name" />
+                            </span>
+                            <span class="row">
+                            <span>Desc:</span>
+                            <textarea class="rowInput" style="resize: none;" id="tab1_Desc"></textarea>
+                            </span>
+                        </fieldset>
+                        <fieldset>
+                            <legend>show </legend>
+                            <span class="row">
+                                <span>das 1:</span>
+                                <select class="rowInput" id="tab1_das1">
+                                    <option selected disabled hidden value=''></option>
+                                    <option>Option 1</option>
+                                </select>
+                            </span>
+                            <span class="row">
+                                <span>das 2:</span>
+                                <select class="rowInput" id="tab1_das2">
+                                    <option selected disabled hidden value=''></option>
+                                    <option>Option 1</option>
+                                </select>
+                            </span>
+                            <span class="row">
+                                <span>fas 3:</span>
+                                <select class="rowInput" id="tab1_das3">
+                                    <option selected disabled hidden value=''></option>
+                                    <option>Option 1</option>
+                                </select>
+                            </span>
+                            <span class="row">
+                                <span>fas 4:</span>
+                                <select class="rowInput" id="tab1_das4">
+                                    <option selected disabled hidden value=''></option>
+                                    <option>Option 1</option>
+                                </select>
+                            </span>
+                        </fieldset>
+                        <fieldset class="fileFieldSet">
+                            <span class="row">
+                                <span>
+                                    <div class="custom_file_upload contentDiv">
+                                        file:
+                                        <input type="text" class="file" name="file_info" id="file_info">
+                                        <div class="file_upload contentDiv">
+                                            <input type="file" id="tab1_file" name="file_upload" class="fff">
+                                        </div>
+                                    </div>
+                                </span>
+                            </span>
+                            <span class="row">
+                            <button class="uploadButton">Upload</button>
+                            </span>
+                        </fieldset>
+                    </div>
+                </div>
+                <div id="content-2" class="contentDiv">
+                    <div class="tab2-innerDiv contentDiv">
+                        <span class="row">
+                        <span>Type:</span>
+                        <input type="checkbox" class="css-checkbox" onclick="checkMe('L')" id="checkL" name="checkL" checked="checked" />
+                        <span class="css-label radGroup1">L</span>
+                        <input type="checkbox" class="css-checkbox" onclick="checkMe('Custom')" id="checkCustom" name="checkCustom" />
+                        <span class="css-label radGroup1">Custom</span>
+                        <input type="checkbox" class="css-checkbox" onclick="checkMe('XL')" id="checkXL" name="checkXL" />
+                        <span class="css-label radGroup1">XL</span>
+                        </span>
+                        <span class="row">
+                            <span>remaining:</span>
+                            <select class="rowInput" id="tab2_remaining">
+                                <option selected disabled hidden value=''></option>
+                                <option>Account</option>
+                                <option>Dota</option>
+                                <option>Clemt</option>
+                            </select>
+                        </span>
+                        <span class="row duo_class">
+                            <span>duo:</span>
+                            <select multiple>
+                                <option value="Option 1">Option 1</option>
+                                <option value="Option 2">Option 2</option>
+                                <option value="Option 3">Option 3</option>
+                            </select>
+                        </span>
+                        <span class="row">
+                            <div class="custom_file_upload2 contentDiv">
+                                file:
+                                <input type="text" class="file" name="file_info" id="file_info2">
+                                <div class="file_upload contentDiv">
+                                    <input type="file" id="tab2_file" name="file_upload" class="fff">
+                                </div>
+                            </div>
+                        </span>
+                        <span class="row" style="height: 25px;">
+                        <button class="uploadButton" id="uploadButton2">Upload</button>
+                        </span>
+                        <span class="row terraRow" style="display:none;">
+                        <span>Terra:</span>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraOverview" />
+                        <span class="css-label radGroup1">
+                        <font>Overview</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraSlides" />
+                        <span class="css-label radGroup1">
+                        <font>Slides</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraBiolides" />
+                        <span class="css-label radGroup1">
+                        <font>Biolides</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraClibilities" />
+                        <span class="css-label radGroup1">
+                        <font>Clibilities</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraCuses" />
+                        <span class="css-label radGroup1">
+                        <font>Cuses</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraDisecery" />
+                        <span class="css-label radGroup1">
+                        <font>Disecery</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraEnves" />
+                        <span class="css-label radGroup1">
+                        <font>Enves</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraInech" />
+                        <span class="css-label radGroup1">
+                        <font>Inech</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraFilides" />
+                        <span class="css-label radGroup1">
+                        <font>Filides</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraLegliance" />
+                        <span class="css-label radGroup1">
+                        <font>Legliance</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraRelast" />
+                        <span class="css-label radGroup1">
+                        <font>Relast</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraStrat" />
+                        <span class="css-label radGroup1">
+                        <font>Strat</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraPerfides" />
+                        <span class="css-label radGroup1">
+                        <font>Perfides</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraQuanment" />
+                        <span class="css-label radGroup1">
+                        <font>Quanment</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraRisight" />
+                        <span class="css-label radGroup1">
+                        <font>Risight</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraTing" />
+                        <span class="css-label radGroup1">
+                        <font>Ting</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraDFclosure" />
+                        <span class="css-label radGroup1">
+                        <font>DFclosure</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        </span>
+                        <span class="row departmentRow" style="display:none;">
+                        <span>Department:</span>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terra567" />
+                        <span class="css-label radGroup1">
+                        <font>567</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terra567Special" />
+                        <span class="css-label radGroup1">
+                        <font>567Special</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraFixTechnology" />
+                        <span class="css-label radGroup1">
+                        <font>FixTechnology</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraSecudes" />
+                        <span class="css-label radGroup1">
+                        <font>Secudes</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraEqnology" />
+                        <span class="css-label radGroup1">
+                        <font>Eqnology</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        </span>
+                        <span class="row xlRow" style="display:none;">
+                        <span>XL:</span>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraTusny" />
+                        <span class="css-label radGroup1">
+                        <font>Tusny</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraRAGER" />
+                        <span class="css-label radGroup1">
+                        <font>RAGER</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraLoket" />
+                        <span class="css-label radGroup1">
+                        <font>Loket</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraProcket" />
+                        <span class="css-label radGroup1">
+                        <font>Procket</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraFRIA" />
+                        <span class="css-label radGroup1">
+                        <font>FRIA</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraAges" />
+                        <span class="css-label radGroup1">
+                        <font>Ages</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        <input type="checkbox" class="css-checkbox" id="tab2_terraInterclosures" />
+                        <span class="css-label radGroup1">
+                        <font>Interclosures</font>
+                        </span>
+                        <br/>
+                        <br/>
+                        </span>
+                        <span class="row">
+                        <span>Notes:</span>
+                        <textarea class="rowInput" style="resize: none;height:200px; margin-top:30px;" placeholder="EXAMPLES:
+                            -tuutus
+                            -tuu
+                            -included
+                            -IDincluded
+                            -Pemm rep. tuu, etc..." id="tab2_Notes"></textarea>
+                        </span>
+                    </div>
+                </div>
+                <div id="content-3" class="contentDiv">
+                    <div class="tab3-innerDiv contentDiv">
+                        <span class="row">
+                            <span>FennRequired:</span>
+                            <select class="rowInput" onchange="changePageData(this.value)" style="height:23px;" id="tab3_FennRequired">
+                                <option selected disabled hidden value=''></option>
+                                <option value="Eleonly (PDF)">Eleonly (PDF)</option>
+                                <option value="Pard Copy">Pard Copy</option>
+                            </select>
+                        </span>
+                        <div class="divEleonly contentDiv" style="display:none;">
+                            <span>ReqDate:</span>
+                            <input type="date" class="tab3Inputs" id="tab3_ReqDate" />
+                            <span>ReqTime:</span>
+                            <select class="tab3Inputs" id="tab3_ReqTime">
+                                <option selected disabled hidden value=''></option>
+                                <option value="12:00 AM">12:00 AM</option>
+                                <option value="1:00 AM">1:00 AM</option>
+                                <option value="2:00 AM">2:00 AM</option>
+                                <option value="3:00 AM">3:00 AM</option>
+                                <option value="4:00 AM">4:00 AM</option>
+                                <option value="5:00 AM">5:00 AM</option>
+                                <option value="6:00 AM">6:00 AM</option>
+                                <option value="7:00 AM">7:00 AM</option>
+                                <option value="8:00 AM">8:00 AM</option>
+                                <option value="9:00 AM">9:00 AM</option>
+                                <option value="10:00 AM">10:00 AM</option>
+                                <option value="11:00 AM">11:00 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="1:00 PM">1:00 PM</option>
+                                <option value="2:00 PM">2:00 PM</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="4:00 PM">4:00 PM</option>
+                                <option value="5:00 PM">5:00 PM</option>
+                                <option value="6:00 PM">6:00 PM</option>
+                                <option value="7:00 PM">7:00 PM</option>
+                                <option value="8:00 PM">8:00 PM</option>
+                                <option value="9:00 PM">9:00 PM</option>
+                                <option value="10:00 PM">10:00 PM</option>
+                                <option value="11:00 PM">11:00 PM</option>
+                            </select>
+                            <div class="email2">
+                                <span>EmailTo:</span>
+                                <select multiple class="tab3Inputs" id="tab3_EmailTo">
+                                    <option value="Option 1">Option 1</option>
+                                    <option value="Option 2">Option 2</option>
+                                    <option value="Option 3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="divPardCopy contentDiv" style="display:none;">
+                            <div class="tab3-innerInnerDiv contentDiv" style="margin: 0px;">
+                                <span>ReqDate:</span>
+                                <input type="date" class="tab3Inputs" id="tab3divPardCopy_ReqDate" />
+                                <span>ReqTime:</span>
+                                <select class="tab3Inputs" id="tab3divPardCopy_ReqTime">
+                                    <option selected disabled hidden value=''></option>
+                                    <option value="12:00 AM">12:00 AM</option>
+                                    <option value="1:00 AM">1:00 AM</option>
+                                    <option value="2:00 AM">2:00 AM</option>
+                                    <option value="3:00 AM">3:00 AM</option>
+                                    <option value="4:00 AM">4:00 AM</option>
+                                    <option value="5:00 AM">5:00 AM</option>
+                                    <option value="6:00 AM">6:00 AM</option>
+                                    <option value="7:00 AM">7:00 AM</option>
+                                    <option value="8:00 AM">8:00 AM</option>
+                                    <option value="9:00 AM">9:00 AM</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="1:00 PM">1:00 PM</option>
+                                    <option value="2:00 PM">2:00 PM</option>
+                                    <option value="3:00 PM">3:00 PM</option>
+                                    <option value="4:00 PM">4:00 PM</option>
+                                    <option value="5:00 PM">5:00 PM</option>
+                                    <option value="6:00 PM">6:00 PM</option>
+                                    <option value="7:00 PM">7:00 PM</option>
+                                    <option value="8:00 PM">8:00 PM</option>
+                                    <option value="9:00 PM">9:00 PM</option>
+                                    <option value="10:00 PM">10:00 PM</option>
+                                    <option value="11:00 PM">11:00 PM</option>
+                                </select>
+                                <span>EmailTo:</span>
+                                <div class="email2">
+                                    <select multiple class="tab3Inputs" id="tab3divPardCopy_EmailTo">
+                                        <option value="Option 1">Option 1</option>
+                                        <option value="Option 2">Option 2</option>
+                                        <option value="Option 3">Option 3</option>
+                                    </select>
+                                </div>
+                                <span>CopiesTR:</span>
+                                <input type="text" class="tab3Inputs" id="tab3divPardCopy_CopiesTR" />
+                                <span>Paper Type:</span>
+                                <select class="tab3Inputs" id="tab3divPardCopy_Paper">
+                                    <option selected disabled hidden value=''></option>
+                                    <option value="Union">Union</option>
+                                    <option value="Plain (Non-Union)">Plain (Non-Union)</option>
+                                </select>
+                                <span>Print Type:</span>
+                                <select class="tab3Inputs" id="tab3divPardCopy_Print">
+                                    <option selected disabled hidden value=''></option>
+                                    <option value="sided (bae tabs)">sided (bae tabs)</option>
+                                    <option value="sides (bua tabs)">sides (bua tabs)</option>
+                                </select>
+                                <span>FnType:</span>
+                                <select class="tab3Inputs" id="tab3divPardCopy_FnType">
+                                    <option selected disabled hidden value=''></option>
+                                    <option value="Wirnd">Wirnd</option>
+                                    <option value="Stafed">Stafed</option>
+                                    <option value="Unfind">Unfind</option>
+                                </select>
+                                <span># of Books:</span>
+                                <select class="tab3Inputs" id="tab3divPardCopyBooks">
+                                    <option selected disabled hidden value=''></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <span>Delivery Date:</span>
+                                <input type="date" class="tab3Inputs" id="tab3divPardCopy_Deliverydate" />
+                                <span>Time Required:</span>
+                                <select class="tab3Inputs" id="tab3divPardCopy_Timerequried">
+                                    <option selected disabled hidden value=''></option>
+                                    <option value="12:00 AM">12:00 AM</option>
+                                    <option value="1:00 AM">1:00 AM</option>
+                                    <option value="2:00 AM">2:00 AM</option>
+                                    <option value="3:00 AM">3:00 AM</option>
+                                    <option value="4:00 AM">4:00 AM</option>
+                                    <option value="5:00 AM">5:00 AM</option>
+                                    <option value="6:00 AM">6:00 AM</option>
+                                    <option value="7:00 AM">7:00 AM</option>
+                                    <option value="8:00 AM">8:00 AM</option>
+                                    <option value="9:00 AM">9:00 AM</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="1:00 PM">1:00 PM</option>
+                                    <option value="2:00 PM">2:00 PM</option>
+                                    <option value="3:00 PM">3:00 PM</option>
+                                    <option value="4:00 PM">4:00 PM</option>
+                                    <option value="5:00 PM">5:00 PM</option>
+                                    <option value="6:00 PM">6:00 PM</option>
+                                    <option value="7:00 PM">7:00 PM</option>
+                                    <option value="8:00 PM">8:00 PM</option>
+                                    <option value="9:00 PM">9:00 PM</option>
+                                    <option value="10:00 PM">10:00 PM</option>
+                                    <option value="11:00 PM">11:00 PM</option>
+                                </select>
+                                <span>Contact Person:</span>
+                                <select class="tab3Inputs" id="tab3divPardCopy_Contactperson">
+                                    <option selected disabled hidden value=''></option>
+                                    <option value="Option 1">Option 1</option>
+                                </select>
+                            </div>
+                            <div class="tab3-innerInnerDiv contentDiv" style="margin: 0px 3%;">
+                                <span>Type:</span>
+                                <select class="tab3Inputs" id="tab3divPardCopy_Type">
+                                    <option selected disabled hidden value=''></option>
+                                    <option value="Overnight">Overnight</option>
+                                    <option value="Morning">Morning</option>
+                                </select>
+                                <span>terrw :</span>
+                                <select class="tab3Inputs" id="tab3divPardCopy_terrwe">
+                                    <option selected disabled hidden value=''></option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                                <span># of yupp:</span>
+                                <select class="tab3Inputs" id="tab3divPardCopyoftupp">
+                                    <option selected disabled hidden value=''></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <span>Arrive By Date:</span>
+                                <input type="date" class="tab3Inputs" id="tab3divPardCopy_Arrivebydate" />
+                                <span>Arrive By Time:</span>
+                                <select class="tab3Inputs" id="tab3divPardCopy_Arrivebytime">
+                                    <option selected disabled hidden value=''></option>
+                                    <option value="12:00 AM">12:00 AM</option>
+                                    <option value="1:00 AM">1:00 AM</option>
+                                    <option value="2:00 AM">2:00 AM</option>
+                                    <option value="3:00 AM">3:00 AM</option>
+                                    <option value="4:00 AM">4:00 AM</option>
+                                    <option value="5:00 AM">5:00 AM</option>
+                                    <option value="6:00 AM">6:00 AM</option>
+                                    <option value="7:00 AM">7:00 AM</option>
+                                    <option value="8:00 AM">8:00 AM</option>
+                                    <option value="9:00 AM">9:00 AM</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="1:00 PM">1:00 PM</option>
+                                    <option value="2:00 PM">2:00 PM</option>
+                                    <option value="3:00 PM">3:00 PM</option>
+                                    <option value="4:00 PM">4:00 PM</option>
+                                    <option value="5:00 PM">5:00 PM</option>
+                                    <option value="6:00 PM">6:00 PM</option>
+                                    <option value="7:00 PM">7:00 PM</option>
+                                    <option value="8:00 PM">8:00 PM</option>
+                                    <option value="9:00 PM">9:00 PM</option>
+                                    <option value="10:00 PM">10:00 PM</option>
+                                    <option value="11:00 PM">11:00 PM</option>
+                                </select>
+                                <span>qq Name:</span>
+                                <input type="text" class="tab3Inputs" id="tab3divPardCopy_qqname" />
+                                <span>Contact  Number:</span>
+                                <input type="text" class="tab3Inputs" id="tab3divPardCopy_Contactnumber" />
+                                <span>Company Name:</span>
+                                <input type="text" class="tab3Inputs" id="tab3divPardCopy_Contactname" />
+                                <span>Company Address:</span>
+                                <input type="text" class="tab3Inputs" id="tab3divPardCopy_Contactaddress" />
+                                <span>Suite/Floor:</span>
+                                <input type="text" class="tab3Inputs" id="tab3divPardCopy_SuiteFloor" />
+                                <span>City/State/Zip:</span>
+                                <input type="text" class="tab3Inputs" id="tab3divPardCopy_CitystateZip" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="showdata"></div>
+        <footer>
+            <button class="submitBtn" id="submitMe">Submit</button>
+        </footer>
+        <script src="resources/js/jquery.multiselect.js"></script>
+        <script>
+            $('select[multiple]').multiselect({
+                columns: 1,
+                placeholder: ''
+            });
+        </script>
+    </body>
 </html>

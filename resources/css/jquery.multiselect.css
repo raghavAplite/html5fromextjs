@@ -1,0 +1,171 @@
+.ms-options-wrap,
+.ms-options-wrap * {
+    box-sizing: border-box;
+}
+.ms-options-wrap
+{
+    position: relative;
+    width: 63% !important;
+    display: inline-block;
+    color: black;
+    padding: 0px 0px 0px 0px;
+    background-color: white;
+    background-image: url(images/form/text-bg.gif);
+    font: normal 12px/17px tahoma, arial, verdana, sans-serif;
+    min-width: 150px;
+    vertical-align: middle;
+    height: 22px;
+}
+
+.ms-options-wrap > button:focus,
+.ms-options-wrap > button {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #B5B8C8;
+    background-color: #fff;
+    padding: 3px 20px 5px 5px;
+    margin-top: 1px;
+    font-size: 13px;
+    color: #000;
+    outline: none;
+    white-space: nowrap;
+    height: 22px;
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: tahoma, arial, verdana, sans-serif; 
+}
+
+.ms-options-wrap > button:after {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 0;
+    border: 4px solid rgba(0, 0, 0, 0);
+    border-top-color: #000;
+    margin-top: -3px;
+}
+
+.ms-options-wrap > .ms-options {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 1px;
+    margin-bottom: 20px;
+    background: white;
+    z-index: 2000;
+    border: 1px solid #aaa;
+}
+
+.ms-options-wrap > .ms-options > .ms-search input {
+    width: 100%;
+    padding: 4px 5px;
+    border: none;
+    border-bottom: 1px groove;
+    outline: none;
+}
+
+.ms-options-wrap > .ms-options .ms-selectall {
+    display: inline-block;
+    font-size: .9em;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+.ms-options-wrap > .ms-options .ms-selectall:hover {
+    text-decoration: underline;
+}
+
+.ms-options-wrap > .ms-options > .ms-selectall.global {
+    margin: 4px 5px;
+}
+
+.ms-options-wrap > .ms-options > ul > li.optgroup {
+    padding: 5px;
+}
+.ms-options-wrap > .ms-options > ul > li.optgroup + li.optgroup {
+    border-top: 1px solid #aaa;
+}
+
+.ms-options-wrap > .ms-options > ul > li.optgroup .label {
+    display: block;
+    padding: 5px 0 0 0;
+    font-weight: bold;
+}
+
+.ms-options-wrap > .ms-options > ul label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 4px;
+    margin: 1px 0;
+}
+
+.ms-options-wrap > .ms-options > ul li.selected label,
+.ms-options-wrap > .ms-options > ul label:hover {
+    background-color: #efefef;
+}
+
+.ms-options-wrap > .ms-options > ul input[type="checkbox"] {
+    margin-right: 5px;
+    position: absolute;
+    left: 4px;
+    top: 7px;
+}
+
+.ms-options label
+{
+    padding-left: 0px !important;
+    border-color: rgba(141, 179, 227, 0) !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    background: none !important;
+    border-radius: 0 !important;
+    padding: 0 3px !important;
+    font: normal 12px tahoma, arial, verdana, sans-serif !important;
+    line-height: 20px !important;
+    cursor: pointer !important;
+    position: relative !important;
+    border-width: 1px !important;
+    border-style: dotted !important;
+    border-color: white !important;
+    text-align: left !important;
+    color: #000 !important; 
+    margin-top: -2px !important;
+    border-style: none !important;
+    margin-left: 0px !important;
+}
+.ms-options {
+    height: 45px !important;
+    min-height: 45px !important;
+    overflow: hidden !important;
+    box-shadow: 0px 2px 4px -1px;
+}
+.ms-options input[type=checkbox]
+{
+    display: none !important;
+    height: 25px !important;
+} 
+.ms-options .ms-reflow{
+    height: 22px !important;
+    border: 1px Solid #fff;
+    list-style: none;
+}
+.ms-options .ms-reflow:hover{
+    background: #dfe8f6 !important;
+    border-color: #a3bae9 !important;
+    height: 21px !important;
+    border-width: 1px;
+    border-style: dotted;
+}
+.duo_class .ms-options, .email2 .ms-options{
+    height: 70px !important;
+    min-height: 70px !important;
+    overflow: hidden !important;
+    box-shadow: 0px 2px 4px -1px
+}
+.email2 .ms-options-wrap {
+    width: 100% !important;
+}
