@@ -6589,7 +6589,76 @@ ol li .jqx-listmenu-item-label:before
 .jqx-menu-wrapper:focus {
     outline: none !important;
 }
-body { font-family:'Open Sans' Arial, Helvetica, sans-serif}
-ul,li { margin:0; padding:0; list-style:nont;}
-.label { color:#000; font-size:16px;}
-.container { max-width:728px; margin-top:150px;}
+body {
+    font-family:'Open Sans' Arial, Helvetica, sans-serif
+}
+ul,li { 
+    margin:0; padding:0; 
+    list-style:nont;
+}
+.label { 
+    color:#000; font-size:16px;
+}
+.container { 
+    max-width:728px; margin-top:150px;
+}
+.jqx-grid-sortremove-icon-right{
+    float: right;
+    background-image: url('../images/default-menu-parent.gif');
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 17px;
+    height: 17px;
+}
+.jqx-menu-item-top:hover{
+    background-color: #aaccf6;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ebf3fd), color-stop(39%, #ebf3fd), color-stop(40%, #d9e8fb), color-stop(100%, #d9e8fb));
+    background-image: -webkit-linear-gradient(top, #ebf3fd, #ebf3fd 39%, #d9e8fb 40%, #d9e8fb);
+    background-image: -moz-linear-gradient(top, #ebf3fd, #ebf3fd 39%, #d9e8fb 40%, #d9e8fb);
+    background-image: -o-linear-gradient(top, #ebf3fd, #ebf3fd 39%, #d9e8fb 40%, #d9e8fb);
+    background-image: -ms-linear-gradient(top, #ebf3fd, #ebf3fd 39%, #d9e8fb 40%, #d9e8fb);
+    background-image: linear-gradient(top, #ebf3fd, #ebf3fd 39%, #d9e8fb 40%, #d9e8fb);
+    border-radius: 5px;
+}
+.table1-submenu
+{
+    height: 198px;
+    right: auto;
+    left: 222px;
+    top: 163px;
+    z-index: 19010;
+    width: 126px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #99bce8;
+    background: #f0f0f0;
+    padding: 2px;
+    overflow: hidden;
+    color: black;
+    font-size: 12px; 
+    display: none !important;
+    font-family: tahoma, arial, verdana, sans-serif;
+}
+.table1-submenu li {
+    right: auto;
+    left: 0px;
+    top: 0px;
+    width: 120px;
+    border-width: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-color: transparent;
+    border-style: solid;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    text-decoration: none;
+    outline: 0;
+    display: block;
+    margin-left: 30px;
+    font: normal 11px tahoma, arial, verdana, sans-serif;
+    line-height: 21px;
+    padding-top: 1px;
+    color: #222222;
+    cursor: pointer;
+    margin: 0 4px 0 4px;
+}

@@ -288,7 +288,7 @@ $(document)
                         width: getWidth('7.5'),
                         editable: false
             }, {
-                        text: 'Products(s)',
+                        text: 'Product(s)',
                         datafield: 'Products',
                         align: 'left',
                         cellsalign: 'left',
@@ -356,7 +356,7 @@ $(document)
                         width: getWidth('7.5'),
                         editable: false
             }, {
-                        text: 'Products(s)',
+                        text: 'Product(s)',
                         datafield: 'Products',
                         align: 'left',
                         cellsalign: 'left',
@@ -425,7 +425,7 @@ $(document)
                         width: getWidth('7.5'),
                         editable: false
             }, {
-                        text: 'Products(s)',
+                        text: 'Product(s)',
                         datafield: 'Products',
                         align: 'left',
                         cellsalign: 'left',
@@ -451,7 +451,16 @@ $(document)
             function getWidth(width) {
                 return((window.innerWidth - 40) * width) / 100;
             }
-        }
+        } 
+        setTimeout(function(){ 
+            $(".columsortgrid_cls").mouseover(function(){
+                debugger;
+                 $(".table1-submenu")
+            });
+            $(".columsortgrid_cls").mouseout(function(){
+                 debugger
+            });
+        })
     });
 
 

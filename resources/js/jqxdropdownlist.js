@@ -307,20 +307,20 @@ License: http://jqwidgets.com/license/
             var q = q;
             q.propertyChangeMap.disabled = function(e, t, s, u) {
                 if (u) {
-                    e.host.addClass(q.toThemeProperty("jqx-dropdownlist-state-disabled"));
-                    e.host.addClass(q.toThemeProperty("jqx-fill-state-disabled"));
-                    e.dropdownlistContent.addClass(q.toThemeProperty("jqx-dropdownlist-content-disabled"))
+                    //e.host.addClass(q.toThemeProperty("jqx-dropdownlist-state-disabled"));
+                    //e.host.addClass(q.toThemeProperty("jqx-fill-state-disabled"));
+                   // e.dropdownlistContent.addClass(q.toThemeProperty("jqx-dropdownlist-content-disabled"))
                 } else {
-                    e.host.removeClass(q.toThemeProperty("jqx-dropdownlist-state-disabled"));
-                    e.host.removeClass(q.toThemeProperty("jqx-fill-state-disabled"));
-                    e.dropdownlistContent.removeClass(q.toThemeProperty("jqx-dropdownlist-content-disabled"))
+                    //e.host.removeClass(q.toThemeProperty("jqx-dropdownlist-state-disabled"));
+                   // e.host.removeClass(q.toThemeProperty("jqx-fill-state-disabled"));
+                   // e.dropdownlistContent.removeClass(q.toThemeProperty("jqx-dropdownlist-content-disabled"))
                 }
-                a.jqx.aria(e, "aria-disabled", e.disabled)
+                //a.jqx.aria(e, "aria-disabled", e.disabled)
             };
             if (q.disabled) {
-                q.host.addClass(q.toThemeProperty("jqx-dropdownlist-state-disabled"));
-                q.host.addClass(q.toThemeProperty("jqx-fill-state-disabled"));
-                q.dropdownlistContent.addClass(q.toThemeProperty("jqx-dropdownlist-content-disabled"))
+                //q.host.addClass(q.toThemeProperty("jqx-dropdownlist-state-disabled"));
+               // q.host.addClass(q.toThemeProperty("jqx-fill-state-disabled"));
+                //q.dropdownlistContent.addClass(q.toThemeProperty("jqx-dropdownlist-content-disabled"))
             }
             q.arrow.addClass(q.toThemeProperty("jqx-icon-arrow-down"));
             q.arrow.addClass(q.toThemeProperty("jqx-icon"));

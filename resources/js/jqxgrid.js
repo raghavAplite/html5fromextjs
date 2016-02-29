@@ -378,7 +378,7 @@ License: http://jqwidgets.com/license/
             }
             h._resizeWindow();
             if (h.disabled) {
-                h.host.addClass(h.toThemeProperty("jqx-fill-state-disabled"))
+               // h.host.addClass(h.toThemeProperty("jqx-fill-state-disabled"))
             }
             h.hasTransform = b.jqx.utilities.hasTransform(h.host);
             if (h.scrollmode == "logical") {
@@ -1225,7 +1225,7 @@ License: http://jqwidgets.com/license/
                 var A = '<div class="jqx-grid-sortdesc-icon"></div>';
                 var x = b("<li>" + A + this.gridlocalization.sortdescendingstring + "</li>");
                 var n = '<div class="jqx-grid-sortremove-icon"></div>';
-                var k = b("<li>" + n + this.gridlocalization.sortbycolumn + "</li>");
+                var k = b("<li><div class='columsortgrid_cls'>" + n + this.gridlocalization.sortbycolumn + "<div class='jqx-grid-sortremove-icon-right'></div></div></li>");
                 var j = '<div class="jqx-grid-groupby-icon"></div>';
                 var q = b("<li>" + j + this.gridlocalization.groupbystring + "</li>");
                 var f = b("<li>" + j + this.gridlocalization.groupremovestring + "</li>");
@@ -11684,9 +11684,9 @@ License: http://jqwidgets.com/license/
                     break;
                 case "disabled":
                     if (h) {
-                        e.host.addClass(e.toThemeProperty("jqx-fill-state-disabled"))
+                        //e.host.addClass(e.toThemeProperty("jqx-fill-state-disabled"))
                     } else {
-                        e.host.removeClass(e.toThemeProperty("jqx-fill-state-disabled"))
+                        //e.host.removeClass(e.toThemeProperty("jqx-fill-state-disabled"))
                     }
                     b.jqx.aria(e, "aria-disabled", e.disabled);
                     if (e.pageable) {

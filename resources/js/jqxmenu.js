@@ -665,11 +665,11 @@ License: http://jqwidgets.com/license/
                     this.disabled = d
                 });
                 if (d) {
-                    b.addClass(f.toThemeProperty("jqx-menu-item-disabled"));
-                    b.addClass(f.toThemeProperty("jqx-fill-state-disabled"))
+                   // b.addClass(f.toThemeProperty("jqx-menu-item-disabled"));
+                   // b.addClass(f.toThemeProperty("jqx-fill-state-disabled"))
                 } else {
-                    b.removeClass(f.toThemeProperty("jqx-menu-item-disabled"));
-                    b.removeClass(f.toThemeProperty("jqx-fill-state-disabled"))
+                   // b.removeClass(f.toThemeProperty("jqx-menu-item-disabled"));
+                   // b.removeClass(f.toThemeProperty("jqx-fill-state-disabled"))
                 }
             }
         },
@@ -1567,8 +1567,8 @@ License: http://jqwidgets.com/license/
         },
         _render: function(f, g) {
             if (this.disabled) {
-                this.host.addClass(this.toThemeProperty("jqx-fill-state-disabled"));
-                this.host.addClass(this.toThemeProperty("jqx-menu-disabled"))
+               // this.host.addClass(this.toThemeProperty("jqx-fill-state-disabled"));
+               // this.host.addClass(this.toThemeProperty("jqx-menu-disabled"))
             }
             if (this.host.attr("tabindex") == undefined) {
                 this.host.attr("tabindex", 0)
@@ -2360,8 +2360,8 @@ License: http://jqwidgets.com/license/
                     }
                 }
                 if (g.disabled) {
-                    s.addClass(x.toThemeProperty("jqx-menu-item-disabled"));
-                    s.addClass(x.toThemeProperty("jqx-fill-state-disabled"))
+                   // s.addClass(x.toThemeProperty("jqx-menu-item-disabled"));
+                   // s.addClass(x.toThemeProperty("jqx-fill-state-disabled"))
                 }
                 this.itemMapping[j] = {
                     element: u[j],
@@ -2481,11 +2481,11 @@ License: http://jqwidgets.com/license/
             }
             if (d == "disabled") {
                 if (b.disabled) {
-                    b.host.addClass(b.toThemeProperty("jqx-fill-state-disabled"));
-                    b.host.addClass(b.toThemeProperty("jqx-menu-disabled"))
+                    //b.host.addClass(b.toThemeProperty("jqx-fill-state-disabled"));
+                   // b.host.addClass(b.toThemeProperty("jqx-menu-disabled"))
                 } else {
-                    b.host.removeClass(b.toThemeProperty("jqx-fill-state-disabled"));
-                    b.host.removeClass(b.toThemeProperty("jqx-menu-disabled"))
+                   // b.host.removeClass(b.toThemeProperty("jqx-fill-state-disabled"));
+                    //b.host.removeClass(b.toThemeProperty("jqx-menu-disabled"))
                 }
             }
             if (g == h) {

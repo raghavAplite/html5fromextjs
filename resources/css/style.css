@@ -4,12 +4,12 @@
     padding: 0;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-      -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none;   /* Chrome/Safari/Opera */
-      -khtml-user-select: none;    /* Konqueror */
-      -moz-user-select: none;      /* Firefox */
-      -ms-user-select: none;       /* IE/Edge */
-      user-select: none;           /* non-prefixed version, currently
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;           /* non-prefixed version, currently
                                   not supported by any browser */
 }
 
@@ -138,7 +138,7 @@
 }
 
 input.visible {
-  visibility: visible !important;
+    visibility: visible !important;
 }
 
 .menuNav
@@ -194,15 +194,10 @@ input.visible {
     box-sizing: border-box;
     color: rgb(51, 51, 51);
     cursor: pointer;
-    font-family: tahoma, arial, verdana, sans-serif;
-    font-size: 11px;
-    font-weight: normal;
     height: 22px;
     display: inline-block;
-    padding: 1px;
+    padding: 1px 6px 0px 6px !important;
     margin: 2px 0px 2px 0px;
-    padding-left: 6px;
-    padding-right: 6px;
 }
 
 .strip
@@ -262,7 +257,7 @@ footer
     border-top-style: solid;
     border-top-width: 1px;
     box-sizing: border-box;
-    color:rgb(51, 51, 51)
+    color:rgb(51, 51, 51);
     cursor: pointer;
     display: block;
     font-family: tahoma, arial, verdana, sans-serif;
@@ -313,20 +308,7 @@ a
 }
 
 .tab1-innerDiv, .tab3-innerInnerDiv
-{
-    /*padding: 0px !important;
-    margin: 2.3%;
-    width: 45% !important;
-    height: auto !important;
-    overflow: hidden !important;
-    color: black;
-    font-size: 12px;
-    font-weight: normal;
-    font-family: tahoma, arial, verdana, sans-serif;
-    opacity: 1 !important;
-    display: inline-block;
-    position: initial !important;
-    float: left;*/
+{ 
     padding: 0px !important;
     margin: 8px 2px;
     width: 48% !important;
@@ -427,7 +409,7 @@ fieldset .row
     right: auto;
     left: 245px;
     top: 0px;
-      margin: -15px 0px;
+    margin: -15px 0px;
     border-color: #d1d1d1;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -466,16 +448,13 @@ fieldset .row
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     border-radius: 4px;
-    padding-top: 2px;
     border-width: 1px;
     border-style: solid;
     background-color: #dfe9f6;
     border-color: #99bce8;
     padding: 0px 10px 0px 10px;
     width: 100%;
-    height: 67px;
-    margin-top: 0px;
-    padding-top: 0px;
+    height: 67px
 
 }
 .rowInput_file
@@ -718,10 +697,7 @@ input[type=date]::-webkit-outer-spin-button {
     padding: 4px 6px 5px 6px;
     white-space: nowrap;
     position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .headTr
@@ -735,10 +711,8 @@ input[type=date]::-webkit-outer-spin-button {
 
 .table_1_upper td
 {
-    padding-left: 3px;
     display: table-cell;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding: 2px 0px 2px 3px;
 }
 
 input[type=checkbox].css-checkbox
@@ -752,8 +726,7 @@ input[type=checkbox].css-checkbox
     border: 0;
     opacity: 0;
     margin-top: -3px;
-    cursor: pointer;
-    height: 1px;
+    cursor: pointer; 
     width: 1px;
 
 }
@@ -809,18 +782,16 @@ div.custom_file_upload2 {
     width: 100%;
     height: 28px !important;
     opacity: 1 !important;
-    padding: 0 !important;
     position: inherit !important;
     overflow: hidden !important;
     float: left;
     margin: 0px;
-    width: 100%;
     display: inline-block;
     vertical-align: middle;
     border: 1px solid #99bce8;
     background: #fff;
     color: black;
-    padding: 1px 3px 2px 3px;
+    padding: 0px 3px 2px 3px !important;
     background-color: white;
     font: normal 12px/17px tahoma, arial, verdana, sans-serif;
     min-height: 20px;
@@ -833,11 +804,10 @@ input[type=file]:focus
     background-color: #99bce;outline: 0;
 }
 #uploadButton2{
-margin-top: 5px;
+    margin-top: 5px;
 }
 
-input[type=button]:{
-
+input[type=button]:{ 
     border: 1px dotted;
     background-color: #99bce;outline: 0;
 }
@@ -856,11 +826,11 @@ input[type=button]:focus{
 }
 .file{
     margin-left: 80px;
-border-radius: 0px !important;
-margin-top: 0px;
-padding-top: 0px;
-width: 85px;
-height: 20px;
+    border-radius: 0px !important;
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 85px;
+    height: 20px;
   }
 
 input[type="file" i]:.fff,{
@@ -882,7 +852,6 @@ input[type="file" i]:.fff,{
 input.file {
     width: 85px;
     height: 20px;
-    border: 2px solid #BBB;
     border-right: 0;
     color: #888;
     padding: 5px;
@@ -895,7 +864,7 @@ input.file {
     border-bottom-left-radius: 5px;
     overflow: hidden !important;
     outline: none;margin-top: 0px;
-padding-top: 0px;
+    padding-top: 0px;
 }
 
 div.file_upload {
@@ -913,7 +882,6 @@ div.file_upload {
     font-weight: bold;
     text-align: center;
     opacity: 1 !important;
-    padding: 0 !important;
     padding-top: 8px !important;
     border-color: #d1d1d1;
     -webkit-border-radius: 3px;
@@ -933,15 +901,10 @@ div.file_upload {
     background-image: linear-gradient(top, #ffffff, #f9f9f9 48%, #e2e2e2 52%, #e7e7e7);
     display: inline-block;
     outline: 0;
-    cursor: pointer;
     white-space: nowrap;
     text-decoration: none;
     vertical-align: top;
-    overflow: hidden;
-    position: relative;
     margin-left: 3px;
-    overflow: hidden !important;
-    position: relative;
     font: normal 11px/16px tahoma, arial, verdana, sans-serif;
     color: #333333;
     padding: 0 4px !important;
